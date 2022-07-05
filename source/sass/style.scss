@@ -1,9 +1,35 @@
 $main-bg: #323338;
 $secondary-bg: #28292E;
-
+$icon-color: #F48C0C;
+$hover-color: #f45202;
+$active-color: #f21800;
 
 
 
 
 @import "null.scss";
 @import "fonts.scss";
+@import "header.scss";
+@import "intro.scss";
+
+
+.wrapper {
+  position: relative;
+
+}
+
+.wrapper::before {
+  content: "";
+  background: url(../img/mobile/hero_bg-mobile.jpg) 0 0 / cover;
+  min-height: 200px;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  @media (min-width: 767px) {
+    position: absolute;
+    background: url(../img/desktop/hero_bg-desktop.jpg) 0 0 / cover;
+    width: 50%;
+    height: 100vh;
+  }
+}
