@@ -1,6 +1,6 @@
 $main-bg: #323338;
 $secondary-bg: #28292E;
-$icon-color: #F48C0C;
+$primary-color: #F48C0C;
 $hover-color: #f45202;
 $active-color: #f21800;
 
@@ -11,6 +11,7 @@ $active-color: #f21800;
 @import "fonts.scss";
 @import "header.scss";
 @import "intro.scss";
+@import "footer.scss";
 
 
 .wrapper {
@@ -32,4 +33,16 @@ $active-color: #f21800;
     width: 50%;
     height: 100vh;
   }
+}
+
+
+.button {
+  display: inline-block;
+  padding: 15px 40px;
+  width: 100%;
+  font-weight: 900;
+  line-height: 20px;
+  text-align: center;
+  background-color: $primary-color;
+
 }

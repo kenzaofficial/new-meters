@@ -28,10 +28,14 @@
 .header__contact {
   display: flex;
   align-items: center;
-  column-gap: 11px;
+  column-gap: 5px;
   margin-left: auto;
-  font-weight: bold;
+  font-weight: 900;
   transition: .3s;
+
+  @media (min-width: 330px) {
+    column-gap: 12px;
+  }
 
   &:hover {
     color: $hover-color;
@@ -61,9 +65,9 @@
 .header__contact-icon-border {
   transition: 0.3s;
   display: flex;
-  outline: 1px solid $icon-color;
-  width: 21px;
-  height: 21px;
+  outline: 1px solid $primary-color;
+  width: 20px;
+  height: 20px;
 }
 
 
@@ -72,6 +76,6 @@
   margin: auto;
   width: 11px;
   height: 11px;
-  fill: $icon-color;
+  fill: $primary-color;
   transition: .3s;
 }
