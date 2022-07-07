@@ -1,0 +1,268 @@
+// -------------------button---------------
+
+.ui-kit {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: $secondary-bg;
+  padding: 30px;
+  max-width: 500px;
+
+}
+
+.form__item {
+  position: relative;
+  background-color: $input-bg;
+  transition: .3s;
+
+  // &:hover {
+  //   transform: scale(1.04);
+  // }
+}
+
+
+// -----------------------------------checkbox--------------------------
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+
+  &:focus-visible+.checkbox__label {
+    border-color: $primary-color;
+    transition: .3s;
+  }
+}
+
+.checkbox__label:hover::before {
+  border: 1px solid $primary-color;
+}
+
+.checkbox__label:hover::after {
+  border-color: $primary-color;
+  opacity: 1;
+}
+
+.checkbox__label {
+  display: inline-block;
+  border: 1px solid $main-bg;
+  padding: 16px 15px 14px 44px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: $main-bg;
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 21px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid $input-bg;
+    border-bottom: 2px solid $input-bg;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    z-index: 2;
+    transition: .3s;
+  }
+}
+
+.checkbox__input:checked+.checkbox__label::before {
+  background-color: $primary-color;
+}
+
+.checkbox__input:checked+.checkbox__label::after {
+  border-color: #ffffff;
+  opacity: 1;
+}
+
+
+// -----------------------------------button, .secondary-button--------------------------
+
+.button {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 1px solid transparent;
+  width: 100%;
+  font-weight: 900;
+  line-height: 20px;
+  text-align: center;
+  background-color: $primary-color;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.04);
+    background-color: $hover-color;
+  }
+
+  &:active {
+    background-color: $active-color;
+  }
+
+  &:focus-visible {
+    border-color: #ffffff;
+
+  }
+
+}
+
+.secondary-button {
+  display: inline-block;
+  max-width: 140px;
+  padding: 18px 40px;
+  color: $primary-color;
+  text-align: center;
+  line-height: 20px;
+  background-color: $secondary-bg;
+  border: 2px solid $primary-color;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.04);
+    background-color: rgba($color: $primary-color, $alpha: 0.05);
+  }
+
+  &:active {
+    background-color: rgba($color: $primary-color, $alpha: 0.15);
+  }
+
+  &:focus-visible {
+    background-color: rgba($color: $primary-color, $alpha: 0.05);
+  }
+
+}
+
+// -----------------------------------іnput__number--------------------------
+
+.input__number {
+  padding: 15px;
+  width: 100%;
+  line-height: 16px;
+  color: #ffffff;
+  transition: .3s;
+  line-height: 16px;
+  background-color: $input-bg;
+  border: 1px solid $main-bg;
+
+  &::placeholder {
+    color: #727272;
+  }
+
+  &:hover {
+    border-color: #ffffff;
+  }
+
+  &:focus-visible {
+    border-color: $primary-color;
+  }
+}
+
+// -----------------------------------radio--------------------------
+
+
+.radio {}
+
+.radio__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+
+  &:focus-visible+.radio__label {
+    border-color: #ffffff;
+  }
+}
+
+.radio__input:checked+.radio__label {
+  color: $primary-color;
+  border-color: $primary-color;
+
+}
+
+.radio__label {
+  display: inline-block;
+  border: 1px solid #3C3D42;
+  padding: 15px;
+  width: 100%;
+  color: #727272;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  cursor: pointer;
+  max-width: 165px;
+  background-color: $input-bg;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.04);
+    color: #C0C4CA;
+    border-color: #C0C4CA;
+  }
+
+
+
+}
+
+// --------------------------------form__input---------------------------
+.form__user-icon-wrapper {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 10px;
+  line-height: 13px;
+  color: #C0C4CA;
+  z-index: 4;
+}
+
+.form__user-icon {
+  position: absolute;
+  top: 55%;
+  left: 11px;
+  width: 12px;
+  height: 12px;
+  fill: #3C3D42;
+  z-index: 3;
+  transition: .3s;
+
+}
+
+
+
+.form__input {
+  position: relative;
+  display: inline-block;
+  border: 1px solid $main-bg;
+  padding: 24px 15px 5px 34px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $input-bg;
+  color: #ffffff;
+
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  &:focus~.form__user-icon {
+    fill: $primary-color;
+  }
+}
