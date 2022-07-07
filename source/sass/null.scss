@@ -18,7 +18,7 @@
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 a:focus,
@@ -31,13 +31,12 @@ body {
   scroll-behavior: smooth;
   height: 100%;
   line-height: 1;
-  font-family: 'Futura', sans-serif;
+  font-family: "Futura", sans-serif;
   font-size: 16px;
   color: #ffffff;
 }
 
 body {
-
 
   @media (max-width: 767px) {
     &.lock {
@@ -88,7 +87,7 @@ h6 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: $main-bg ;
+  background-color: $main-bg;
 }
 
 .main {

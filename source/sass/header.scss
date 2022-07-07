@@ -14,11 +14,10 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 5px;
-
 }
 
 .header__logo {
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     transform: scale(1.1);
@@ -31,7 +30,7 @@
   column-gap: 5px;
   margin-left: auto;
   font-weight: 900;
-  transition: .3s;
+  transition: 0.3s;
 
   @media (min-width: 330px) {
     column-gap: 12px;
@@ -53,10 +52,6 @@
     color: $active-color;
 
     .header__contact-icon {
-      outline-color: $active-color;
-    }
-
-    .header__contact-icon {
       fill: $active-color;
     }
   }
@@ -70,12 +65,10 @@
   height: 20px;
 }
 
-
-
 .header__contact-icon {
   margin: auto;
   width: 11px;
   height: 11px;
   fill: $primary-color;
-  transition: .3s;
+  transition: 0.3s;
 }
