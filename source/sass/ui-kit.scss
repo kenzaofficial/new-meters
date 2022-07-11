@@ -247,18 +247,18 @@
 
 .form__item--error {
   .form__user-icon-wrapper {
-    color: 9e0000;
+    color: #9e0000;
   }
 
   .form__input {
-    border-color: 9e0000;
+    border-color: #9e0000;
 
     &::placeholder {
-      color: 9e0000;
+      color: #9e0000;
     }
 
     &~.form__user-icon {
-      fill: 9e0000;
+      fill: #9e0000;
     }
   }
 }
