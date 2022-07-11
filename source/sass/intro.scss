@@ -1,7 +1,6 @@
 .intro {
   padding-top: 30px;
   padding-bottom: 57px;
-
 }
 
 .intro--halfed {
@@ -10,8 +9,6 @@
     margin-left: auto;
   }
 }
-
-.intro__container {}
 
 .intro__title {
   padding: 0 15px;
@@ -37,12 +34,12 @@
 .intro__list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   padding-top: 17px;
   padding-bottom: 21px;
   gap: 17px 20px;
   font-size: 12px;
   line-height: 16px;
-  width: 100%;
 }
 
 .intro__item {
@@ -71,5 +68,3 @@
 .intro__text {
   max-width: 130px;
 }
-
-.intro__button {}
