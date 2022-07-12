@@ -60,6 +60,7 @@
 
 .bonus__button {
   @media (min-width:767px) {
+    background-color: rgba($secondary-bg, $alpha: 0.8);
     padding: 5px 25px;
     width: 100%;
     max-width: 100%;
