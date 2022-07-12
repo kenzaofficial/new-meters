@@ -16,7 +16,11 @@
 }
 
 .appartment-type__expert {
-  background: #ccc4 url("../img/expert-bg.jpg") center / cover no-repeat;
+  background: radial-gradient(rgba(40, 41, 46, 0.53), rgba(0, 0, 0, 0.6)),
+    url("../img/expert-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
 
   @media (min-width:767px) {
@@ -25,6 +29,7 @@
     order: 1;
   }
 }
+
 
 .expert {
   padding: 10px;
@@ -35,6 +40,8 @@
     padding: 20px;
   }
 }
+
+
 
 .expert__bonus {
   display: none;
@@ -53,13 +60,12 @@
 
 .bonus__button {
   @media (min-width:767px) {
+    padding: 5px 25px;
     width: 100%;
     max-width: 100%;
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 15px;
-    padding-left: 15px;
-    padding-right: 20px;
 
     &:last-child {
       margin-bottom: 18px;
@@ -73,6 +79,7 @@
   margin-bottom: 10px;
 
   @media (min-width:767px) {
+    margin-bottom: 0;
     flex-direction: column;
     align-items: center;
     order: 1;
@@ -94,7 +101,11 @@
 
 }
 
-.expert__description {}
+.expert__description {
+  @media (min-width:767px) {
+    text-align: center;
+  }
+}
 
 .expert__name {
   padding-top: 11px;
@@ -120,6 +131,10 @@
   line-height: 14px;
   text-align: center;
   background-color: rgba($secondary-bg, $alpha: 0.8);
+
+  @media (min-width:767px) {
+    margin-bottom: 20px;
+  }
 
   &::before {
     position: absolute;
@@ -175,11 +190,6 @@
   display: inline-block;
   transition: 0.3s;
   cursor: pointer;
-
-  &:hover {
-    font-size: 12px;
-  }
-
 }
 
 .spoiler__label--title {
@@ -223,12 +233,7 @@
     border-bottom: 1px solid #ffffff;
     transform: rotate(-45deg);
   }
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
-
 
 // -------------------------------------------form---------------------
 .form {
@@ -237,8 +242,11 @@
   text-align: center;
 
   @media (min-width:767px) {
+    padding: 24px;
     width: 100%;
     order: 0;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -281,4 +289,36 @@
   &:last-of-type {
     margin-bottom: 20px;
   }
+}
+
+
+.form__button-field {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.form__button {
+  @media (min-width:767px) {
+    max-width: 143px;
+    margin-left: auto;
+  }
+
+}
+
+.form__button-field-text {
+  display: none;
+  font-size: 10px;
+  line-height: 14px;
+
+  @media (min-width:767px) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.form__button-field-icon {
+  width: 15px;
+  height: 15px;
 }
