@@ -4,28 +4,75 @@
   border-top: 1px solid #727272;
   font-size: 10px;
   color: #c0c4ca;
+
 }
+
+.footer--test-page {
+  display: none;
+
+  @media (min-width:767px) {
+    display: block;
+  }
+}
+
 
 .footer__container {
   padding: 0 35px 0 43px;
   display: flex;
   flex-wrap: wrap;
-}
 
+  @media (min-width:767px) {
+    justify-content: center;
+    column-gap: 40px;
+  }
+
+  @media (min-width:990px) {
+    column-gap: 80px;
+  }
+}
 
 .footer__copyright {
   padding-top: 8px;
   max-width: 165px;
+
+  @media (min-width:767px) {
+    display: flex;
+    max-width: 100%;
+    padding: 0;
+    column-gap: 40px;
+    align-items: center;
+
+  }
+
+  @media (min-width:990px) {
+    column-gap: 80px;
+  }
 }
 
 .footer__contacts {
   text-align: right;
   max-width: 165px;
   margin-left: auto;
+
+  @media (min-width:520px) {
+    display: flex;
+    max-width: 100%;
+    column-gap: 40px;
+    margin: 0;
+    align-items: center;
+  }
+
+  @media (min-width:990px) {
+    column-gap: 80px;
+  }
 }
 
 .footer__item {
   &:not(:last-child) {
     margin-bottom: 10px;
+
+    @media (min-width:520px) {
+      margin-bottom: 0;
+    }
   }
 }

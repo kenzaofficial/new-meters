@@ -96,8 +96,6 @@
 // -----------------------------------button, .secondary-button--------------------------
 .button {
   display: inline-block;
-  padding: 14px 40px;
-  border: 1px solid transparent;
   width: 100%;
   font-weight: 900;
   line-height: 20px;
@@ -247,18 +245,3 @@
 
 .form__item--error {
   .form__user-icon-wrapper {
-    color: 9e0000;
-  }
-
-  .form__input {
-    border-color: 9e0000;
-
-    &::placeholder {
-      color: 9e0000;
-    }
-
-    &~.form__user-icon {
-      fill: 9e0000;
-    }
-  }
-}

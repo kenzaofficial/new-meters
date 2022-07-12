@@ -10,13 +10,14 @@ $active-color: #f44400;
 @import "ui-kit.scss";
 @import "header.scss";
 @import "intro.scss";
+@import "appartment-type.scss";
 @import "footer.scss";
 
 .wrapper {
   position: relative;
 }
 
-.wrapper::before {
+.wrapper--index::before {
   content: "";
   background: url("../img/mobile/hero_bg-mobile.jpg") 0 0 / cover;
   min-height: 200px;
