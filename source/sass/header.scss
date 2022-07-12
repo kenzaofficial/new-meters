@@ -18,10 +18,13 @@
 }
 
 .header__container {
+
   display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 5px 50px;
 }
 
 .header__logo {
@@ -34,9 +37,9 @@
 
 .header__contact {
   display: flex;
+  margin-left: auto;
   align-items: center;
   column-gap: 5px;
-  margin-left: auto;
   font-weight: 900;
   transition: 0.3s;
 

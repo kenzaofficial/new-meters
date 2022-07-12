@@ -1,18 +1,18 @@
 .appartment-type {
-  padding: 133px 0;
-
+  padding: 50px 0;
 
   @media (min-width:520px) {
     padding: 50px 0;
   }
 }
 
-.appartment-type__container {
-  box-shadow: 0 14px 24px 0 rgba($secondary-bg, $alpha: 0.85);
+.appartment-type__body {
+  box-shadow: 0 14px 14px 0 rgba($secondary-bg, $alpha: 0.85);
 
   @media (min-width:767px) {
     display: flex;
   }
+
 }
 
 .appartment-type__expert {
@@ -235,6 +235,7 @@
 
 // -------------------------------------------form---------------------
 .form {
+  // box-shadow: 0 14px 14px 0 rgba($secondary-bg, $alpha: 0.85);
   padding: 20px 10px;
   background-color: $secondary-bg;
   text-align: center;

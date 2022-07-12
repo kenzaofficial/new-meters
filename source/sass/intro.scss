@@ -10,6 +10,7 @@
   }
 }
 
+
 .intro__title {
   padding: 0 15px;
   font-size: 21px;
@@ -40,6 +41,11 @@
   gap: 17px 20px;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: 767px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .intro__item {
@@ -67,4 +73,11 @@
 
 .intro__text {
   max-width: 130px;
+}
+
+
+.intro__button {
+  @media (min-width:767px) {
+    max-width: 179px;
+  }
 }

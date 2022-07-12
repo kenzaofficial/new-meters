@@ -97,7 +97,9 @@
 .button {
   display: inline-block;
   width: 100%;
+  padding: 16px 40px;
   font-weight: 900;
+  border: 2px solid transparent;
   line-height: 20px;
   text-align: center;
   background-color: $primary-color;
