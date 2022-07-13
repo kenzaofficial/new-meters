@@ -1,12 +1,27 @@
 .intro {
   padding-top: 30px;
   padding-bottom: 57px;
+
+  @media (min-width: 767px) {
+    adding-top: 600px;
+    padding-bottom: 87px;
+  }
+
+  @media (min-width: 990px) {
+    padding: 133px 0;
+  }
 }
 
 .intro--halfed {
   @media (min-width: 767px) {
     width: 50%;
     margin-left: auto;
+  }
+}
+
+.intro__container {
+  @media (min-width: 1110px) {
+    padding: 0 100px 0 20px;
   }
 }
 
