@@ -4,8 +4,11 @@
   border-top: 1px solid #727272;
   font-size: 10px;
   color: #c0c4ca;
-}
 
+  @media (min-width: 767px) {
+    border: none;
+  }
+}
 
 .footer--halfed {
   @media (min-width: 767px) {
@@ -13,6 +16,7 @@
     margin-left: auto;
   }
 }
+
 
 .footer--test-page {
   display: none;
@@ -30,14 +34,13 @@
 
   @media (min-width:767px) {
     justify-content: center;
-    column-gap: 40px;
+    gap: 10px 40px;
   }
 
   @media (min-width:990px) {
     column-gap: 80px;
   }
 }
-
 
 .footer__copyright {
   padding-top: 8px;
