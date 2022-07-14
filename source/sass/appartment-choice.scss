@@ -167,13 +167,9 @@
 
   span {
     display: inline-block;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
   }
 
-}
-
-.spoiler__input:checked~.spoiler__label--title {
-  margin-bottom: 15px;
 }
 
 .spoiler__input:checked~.spoiler__label--arrow {
@@ -314,13 +310,32 @@
   gap: 20px;
 }
 
-.form__button {
+.bottom-field__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 
-  @media (min-width:767px) {}
+  @media (max-width:767px) {
+    width: 100%;
+  }
+
+
+  @media (min-width:767px) {
+    gap: 10px 25px;
+  }
+}
+
+.bottom-field__button {
+  flex: 1 1 49%;
+
+  @media (min-width:767px) {
+    flex: 0 1 auto;
+  }
+
 }
 
 .bottom-field__text {
-  flex: 1 1 auto;
+  flex: 1 1 250px;
   display: none;
   font-size: 10px;
   line-height: 14px;
@@ -330,6 +345,7 @@
     align-items: center;
     gap: 10px;
   }
+
 }
 
 .bottom-field__icon {

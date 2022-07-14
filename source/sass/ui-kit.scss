@@ -14,7 +14,7 @@
   transition: 0.3s;
 
   &:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
   }
 }
 
@@ -97,22 +97,24 @@
 
 .button {
   display: inline-block;
-  // width: 100%;
   padding: 18px 40px;
   text-align: center;
   line-height: 20px;
   transition: 0.3s;
   font-weight: 900;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   background-color: #000000;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
 }
 
 .button-primary {
-  border: 1px solid transparent;
   background-color: $primary-color;
 
   &:hover {
-    transform: scale(1.04);
     background-color: $hover-color;
   }
 
@@ -128,10 +130,9 @@
 .button-secondary {
   color: $primary-color;
   background-color: $secondary-bg;
-  border: 2px solid $primary-color;
+  border-color: $primary-color;
 
   &:hover {
-    transform: scale(1.04);
     background-color: rgba($color: $primary-color, $alpha: 0.05);
   }
 
@@ -197,7 +198,7 @@
   transition: 0.3s;
 
   &:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
     color: #C0C4CA;
     border-color: #C0C4CA;
   }
