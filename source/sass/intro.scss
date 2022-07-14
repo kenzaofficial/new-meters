@@ -25,7 +25,6 @@
   }
 }
 
-
 .intro__title {
   padding: 0 15px;
   font-size: 21px;
@@ -95,8 +94,9 @@
   }
 }
 
-
 .intro__button {
+  width: 100%;
+
   @media (min-width:767px) {
     max-width: 179px;
   }
