@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>appartment-type</title>
+  <title>appartment-size</title>
 </head>
 
 <body>
@@ -65,29 +65,47 @@
             </div>
             <form class="form">
               <div class="form__progress progress">
-                <div class="progress__body"></div>
+                <div class="progress__body progress__body--step2"></div>
               </div>
-              <p class="form__progress-text"><b>Шаг 1</b> из 4</p>
+              <p class="form__progress-text"><b>Шаг 2</b> из 4</p>
               <h2 class="form__title">
-                <b>Какой тип жилья</b> вас интересует?
+                <b>Какая квартира</b> вам нужна?
               </h2>
-              <ul class="form__list">
+              <ul class="form__list form__list--rows ">
                 <li class="form__item checkbox">
-                  <input class="checkbox__input" type="checkbox" name="appartment-type" id="checkbox_1">
+                  <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_1">
                   <label class="checkbox__label" for="checkbox_1">
                     <div class="checkbox__icon"></div> Не определились
                   </label>
                 </li>
                 <li class="form__item checkbox">
-                  <input class="checkbox__input" type="checkbox" name="appartment-type" id="checkbox_2">
+                  <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_2">
                   <label class="checkbox__label" for="checkbox_2">
-                    <div class="checkbox__icon"></div> Строящееся жилье
+                    <div class="checkbox__icon"></div> Двухкомнатная
                   </label>
                 </li>
                 <li class="form__item checkbox">
-                  <input class="checkbox__input" type="checkbox" name="appartment-type" id="checkbox_3">
+                  <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_3">
                   <label class="checkbox__label" for="checkbox_3">
-                    <div class="checkbox__icon"></div> Готовое жилье в новостройке
+                    <div class="checkbox__icon"></div> Студия
+                  </label>
+                </li>
+                <li class="form__item checkbox">
+                  <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_4">
+                  <label class="checkbox__label" for="checkbox_4">
+                    <div class="checkbox__icon"></div> Трехкомнатная
+                  </label>
+                </li>
+                <li class="form__item checkbox">
+                  <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_5">
+                  <label class="checkbox__label" for="checkbox_5">
+                    <div class="checkbox__icon"></div> Однокомнатная
+                  </label>
+                </li>
+                <li class="form__item checkbox">
+                  <input class="checkbox__input" type="checkbox" name="appartment-size" id="checkbox_6">
+                  <label class="checkbox__label" for="checkbox_6">
+                    <div class="checkbox__icon"></div> Четырехкомнатная и больше
                   </label>
                 </li>
               </ul>
@@ -98,7 +116,9 @@
                   </svg>
                   Выберете вариант ответа и нажмите кнопку “Далее” или “Enter”
                 </p>
-                <a href="appartment-size.html" class="button button-primary bottom-field__button">Далее ></a>
+                <a href="appartment-type.html" class="button button-secondary bottom-field__button">назад
+                  ></a>
+                <a href="ui-kit.html" class="button button-primary bottom-field__button">Далее ></a>
               </div>
           </div>
         </div>
