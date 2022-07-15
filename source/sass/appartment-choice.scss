@@ -1,12 +1,8 @@
-.appartment-type {
+.appartment-choice {
   padding: 50px 0;
-
-  @media (min-width:520px) {
-    padding: 50px 0;
-  }
 }
 
-.appartment-type__body {
+.appartment-choice__body {
   box-shadow: 0 14px 14px 0 rgba($secondary-bg, $alpha: 0.85);
 
   @media (min-width:767px) {
@@ -15,7 +11,7 @@
 
 }
 
-.appartment-type__expert {
+.appartment-choice__expert {
   background: radial-gradient(rgba(40, 41, 46, 0.53), rgba(0, 0, 0, 0.6)),
     url("../img/expert-bg.jpg");
   background-size: cover;
@@ -135,6 +131,7 @@
 
   @media (min-width:767px) {
     margin-bottom: 20px;
+    pointer-events: none;
   }
 
   &::before {
@@ -170,13 +167,9 @@
 
   span {
     display: inline-block;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
   }
 
-}
-
-.spoiler__input:checked~.spoiler__label--title {
-  margin-bottom: 15px;
 }
 
 .spoiler__input:checked~.spoiler__label--arrow {
@@ -195,7 +188,6 @@
     margin-bottom: 5px;
   }
 }
-
 
 .spoiler__text {
   position: absolute;
@@ -269,6 +261,14 @@
   box-shadow: 0 0 3px 0 $primary-color;
 }
 
+.progress__body--step2 {
+  width: 50%;
+  height: 7px;
+  border-radius: 15px;
+  background-color: $primary-color;
+  box-shadow: 0 0 3px 0 $primary-color;
+}
+
 .form__progress-text {
   margin-bottom: 18px;
   font-size: 12px;
@@ -281,31 +281,59 @@
   line-height: 23px;
 }
 
-.form__item {
-  text-align-last: left;
-  margin-bottom: 10px;
-
-  &:last-of-type {
-    margin-bottom: 20px;
-  }
+.form__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 20px;
 }
 
+.form__list--rows {
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10px;
 
-.form__button-field {
+}
+
+.form__item {
+  flex: 1 1 49%;
+  text-align-last: left;
+}
+
+.bottom-field {
   margin-top: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 20px;
 }
 
-.form__button {
+.bottom-field__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media (max-width:767px) {
+    width: 100%;
+  }
+
+
   @media (min-width:767px) {
-    max-width: 143px;
-    margin-left: auto;
+    gap: 10px 25px;
+  }
+}
+
+.bottom-field__button {
+  flex: 1 1 49%;
+
+  @media (min-width:767px) {
+    flex: 0 1 auto;
   }
 
 }
 
-.form__button-field-text {
+.bottom-field__text {
+  flex: 1 1 250px;
   display: none;
   font-size: 10px;
   line-height: 14px;
@@ -315,9 +343,10 @@
     align-items: center;
     gap: 10px;
   }
+
 }
 
-.form__button-field-icon {
+.bottom-field__icon {
   width: 15px;
   height: 15px;
 }

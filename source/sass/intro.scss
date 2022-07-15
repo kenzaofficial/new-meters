@@ -25,7 +25,6 @@
   }
 }
 
-
 .intro__title {
   padding: 0 15px;
   font-size: 21px;
@@ -75,6 +74,7 @@
       padding-top: 5px;
     }
   }
+
 }
 
 .intro__icon {
@@ -88,10 +88,15 @@
 
 .intro__text {
   max-width: 130px;
+
+  @media (max-width:460px) {
+    max-width: 100px;
+  }
 }
 
-
 .intro__button {
+  width: 100%;
+
   @media (min-width:767px) {
     max-width: 179px;
   }

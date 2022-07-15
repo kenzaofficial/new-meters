@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>appartment-style</title>
+  <title>appartment-type</title>
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="header header--test-page">
+    <header class="header">
       <div class="header__container">
         <a href="index.html" class="header__logo">
           <img src="img/mobile/mobile-logo.svg" alt="logo">
@@ -27,16 +27,16 @@
       </div>
     </header>
     <main class="main">
-      <section class="appartment-type">
-        <div class="appartment-type__container">
-          <div class="appartment-type__body">
-            <div class="appartment-type__expert expert">
+      <section class="appartment-choice">
+        <div class="appartment-choice__container">
+          <div class="appartment-choice__body">
+            <div class="appartment-choice__expert expert">
               <div class="expert__bonus bonus">
                 <h1 class="bonus__title">Получите <b>БОНУСЫ</b>
                   после прохождения теста</h1>
-                <a href="#" class="bonus__button secondary-button"><b>Ставки от 0,1 %</b>
+                <a href="#" class="button button-secondary bonus__button "><b>Ставки от 0,1 %</b>
                   на весь срок</a>
-                <a href="#" class="bonus__button secondary-button">Ипотека
+                <a href="#" class=" button  button-secondary bonus__button">Ипотека
                   <b>без первоначального взноса</b> </a>
               </div>
               <div class="expert__info">
@@ -71,39 +71,41 @@
               <h2 class="form__title">
                 <b>Какой тип жилья</b> вас интересует?
               </h2>
-              <div class="form__item checkbox">
-                <input class="checkbox__input" type="checkbox" name="appartment-type" id="checkbox_1">
-                <label class="checkbox__label" for="checkbox_1">
-                  <div class="checkbox__icon"></div> Не определились
-                </label>
-              </div>
-              <div class="form__item checkbox">
-                <input class="checkbox__input" type="checkbox" name="appartment-type" id="checkbox_2">
-                <label class="checkbox__label" for="checkbox_2">
-                  <div class="checkbox__icon"></div> Строящееся жилье
-                </label>
-              </div>
-              <div class="form__item checkbox">
-                <input class="checkbox__input" type="checkbox" name="appartment-type" id="checkbox_3">
-                <label class="checkbox__label" for="checkbox_3">
-                  <div class="checkbox__icon"></div> Готовое жилье в новостройке
-                </label>
-              </div>
-              <div class="form__button-field">
-                <p class="form__button-field-text">
-                  <svg class="form__button-field-icon">
-                    <use href="img/sprite.svg#button-field-icon"></use>
+              <ul class="form__list">
+                <li class="form__item checkbox">
+                  <input class="checkbox__input" type="checkbox" name="appartment-type" id="checkbox_1">
+                  <label class="checkbox__label" for="checkbox_1">
+                    <div class="checkbox__icon"></div> Не определились
+                  </label>
+                </li>
+                <li class="form__item checkbox">
+                  <input class="checkbox__input" type="checkbox" name="appartment-type" id="checkbox_2">
+                  <label class="checkbox__label" for="checkbox_2">
+                    <div class="checkbox__icon"></div> Строящееся жилье
+                  </label>
+                </li>
+                <li class="form__item checkbox">
+                  <input class="checkbox__input" type="checkbox" name="appartment-type" id="checkbox_3">
+                  <label class="checkbox__label" for="checkbox_3">
+                    <div class="checkbox__icon"></div> Готовое жилье в новостройке
+                  </label>
+                </li>
+              </ul>
+              <div class="form__bottom-field bottom-field">
+                <p class="bottom-field__text">
+                  <svg class="bottom-field__icon">
+                    <use href="img/sprite.svg#bottom-field-icon"></use>
                   </svg>
                   Выберете вариант ответа и нажмите кнопку “Далее” или “Enter”
                 </p>
-                <a href="#" class="button form__button">Далее ></a>
+                <a href="step-2.html" class="button button-primary bottom-field__button">Далее ></a>
               </div>
           </div>
         </div>
         </form>
       </section>
     </main>
-    <footer class="footer footer--test-page">
+    <footer class="footer">
       <div class="footer__container">
         <div class="footer__copyright">
           <div class="footer__item">
