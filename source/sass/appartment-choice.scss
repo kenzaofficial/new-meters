@@ -241,8 +241,8 @@
   }
 }
 
-.form__progress {
-  margin-bottom: 12px;
+.progress {
+  width: 100%;
   padding: 0 4px;
   display: flex;
   align-items: center;
@@ -250,11 +250,25 @@
   background-color: $input-bg;
   border: 1px solid $main-bg;
   border-radius: 15px;
+}
+
+.progress--height {
+  height: 30px;
+
+  .progress__body {
+    width: 33%;
+    height: 18px;
+  }
+}
+
+
+.form__progress {
+  margin-bottom: 12px;
 
 }
 
 .progress__body {
-  width: 25%;
+  width: 1%;
   height: 7px;
   border-radius: 15px;
   background-color: $primary-color;
@@ -262,11 +276,19 @@
 }
 
 .progress__body--step2 {
+  width: 25%;
+}
+
+.progress__body--step2 {
   width: 50%;
-  height: 7px;
-  border-radius: 15px;
-  background-color: $primary-color;
-  box-shadow: 0 0 3px 0 $primary-color;
+}
+
+.progress__body--step3 {
+  width: 75%;
+}
+
+.progress__body--step4 {
+  width: 99%;
 }
 
 .form__progress-text {
