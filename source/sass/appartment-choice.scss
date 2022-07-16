@@ -1,5 +1,9 @@
 .appartment-choice {
   padding: 50px 0;
+
+  @media (min-width:767px) {
+    padding-top: 130px;
+  }
 }
 
 .appartment-choice__body {
@@ -275,7 +279,7 @@
   box-shadow: 0 0 3px 0 $primary-color;
 }
 
-.progress__body--step2 {
+.progress__body--step1 {
   width: 25%;
 }
 

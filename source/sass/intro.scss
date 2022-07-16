@@ -3,7 +3,7 @@
   padding-bottom: 57px;
 
   @media (min-width: 767px) {
-    adding-top: 600px;
+    padding-top: 80px;
     padding-bottom: 87px;
   }
 
@@ -89,8 +89,8 @@
 .intro__text {
   max-width: 130px;
 
-  @media (max-width:460px) {
-    max-width: 100px;
+  @media (max-width:359px) {
+    max-width: 115px;
   }
 }
 
