@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <div class="wrapper intro-bg intro-bg--disabled ">
+  <div class="wrapper intro-bg intro-bg--disabled">
     <header class="header header--absolute">
-      <div class="header__container header__container--halfed">
+      <div class="header__container header__container--halfed header__container--user-form">
         <a href="ui-kit.html" class="header__logo">
           <img src="img/mobile/mobile-logo.svg" alt="logo">
         </a>
@@ -27,56 +27,145 @@
       </div>
     </header>
     <main class="main">
-      <section class="intro intro--halfed intro-bg intro-bg--user-info">
-        <div class="intro__container">
-          <h1 class="intro__title">Осталось получить <span>самые выгодные условия по ипотеке</span>
-          </h1>
-          <p class="intro__description"><span>Подберем варианты, </span> максимально близкие выбранным параметрам
-          </p>
-          <ul class="intro__list">
-            <li class="intro__item">
-              <svg class="intro__icon">
-                <use href="img/sprite.svg#intro-icon"></use>
-              </svg>
-              <p class="intro__text">Независимо от кредитной истории</p>
-            </li>
-            <li class="intro__item">
-              <svg class="intro__icon">
-                <use href="img/sprite.svg#intro-icon"></use>
-              </svg>
-              <p class="intro__text">Работаем с программами
-                27 банков</p>
-            </li>
-            <li class="intro__item">
-              <svg class="intro__icon">
-                <use href="img/sprite.svg#intro-icon"></use>
-              </svg>
-              <p class="intro__text">Без первоначального взноса</p>
-            </li>
-            <li class="intro__item">
-              <svg class="intro__icon">
-                <use href="img/sprite.svg#intro-icon"></use>
-              </svg>
-              <p class="intro__text">Быстрое рассмотрение заявки</p>
-            </li>
-            <li class="intro__item">
-              <svg class="intro__icon">
-                <use href="img/sprite.svg#intro-icon"></use>
-              </svg>
-              <p class="intro__text">Ставки от 0,1 % на весь срок</p>
-            </li>
-            <li class="intro__item">
-              <svg class="intro__icon">
-                <use href="img/sprite.svg#intro-icon"></use>
-              </svg>
-              <p class="intro__text">Минимум документов и без посещения банка</p>
-            </li>
-          </ul>
+      <section class="user-info">
+        <div class="user-info__intro  intro  intro-bg">
+          <div class="intro__container">
+            <h1 class="intro__title">Осталось получить <span>самые выгодные условия по ипотеке</span>
+            </h1>
+            <p class="intro__description"><span>Подберем варианты, </span> максимально близкие выбранным параметрам
+            </p>
+            <ul class="intro__list">
+              <li class="intro__item">
+                <svg class="intro__icon">
+                  <use href="img/sprite.svg#intro-icon"></use>
+                </svg>
+                <p class="intro__text">Независимо от кредитной истории</p>
+              </li>
+              <li class="intro__item">
+                <svg class="intro__icon">
+                  <use href="img/sprite.svg#intro-icon"></use>
+                </svg>
+                <p class="intro__text">Работаем с программами
+                  27 банков</p>
+              </li>
+              <li class="intro__item">
+                <svg class="intro__icon">
+                  <use href="img/sprite.svg#intro-icon"></use>
+                </svg>
+                <p class="intro__text">Без первоначального взноса</p>
+              </li>
+              <li class="intro__item">
+                <svg class="intro__icon">
+                  <use href="img/sprite.svg#intro-icon"></use>
+                </svg>
+                <p class="intro__text">Быстрое рассмотрение заявки</p>
+              </li>
+              <li class="intro__item">
+                <svg class="intro__icon">
+                  <use href="img/sprite.svg#intro-icon"></use>
+                </svg>
+                <p class="intro__text">Ставки от 0,1 % на весь срок</p>
+              </li>
+              <li class="intro__item">
+                <svg class="intro__icon">
+                  <use href="img/sprite.svg#intro-icon"></use>
+                </svg>
+                <p class="intro__text">Минимум документов и без посещения банка</p>
+              </li>
+            </ul>
+          </div>
         </div>
+        <!--end of intro-->
+        <form class="user-info__user-form user-form">
+          <div class="user-form__container">
+            <div class="user-form__content">
+              <h2 class="user-form__title">
+                <b>Куда вам отправить результаты</b>
+                после прохождения теста?
+              </h2>
+              <ul class="user-form__radio-list radio-list">
+                <li class="radio-list__item">
+                  <div class="radio">
+                    <input class="radio__input" type="radio" name="social" id="email">
+                    <label class=" radio__label" for="email">Email @</label>
+                  </div>
+                </li>
+                <li class="radio-list__item">
+                  <div class="radio">
+                    <input class="radio__input" type="radio" name="social" id="WhatsApp">
+                    <label class=" radio__label" for="WhatsApp">WhatsApp</label>
+                  </div>
+                </li>
+                <li class="radio-list__item">
+                  <div class="radio">
+                    <input class="radio__input" type="radio" name="social" id="Facebook">
+                    <label class=" radio__label" for="Facebook">Facebook</label>
+                  </div>
+                </li>
+                <li class="radio-list__item">
+                  <div class="radio">
+                    <input class="radio__input" type="radio" name="social" id="Telegram">
+                    <label class=" radio__label" for="Telegram">Telegram</label>
+                  </div>
+                </li>
+              </ul>
+              <!--end of user-form__input-list-->
+              <ul class="user-form__input-list input-list">
+                <li class="form__item input-list__item">
+                  <div class="input">
+                    <input type="text" class="input__control" name="name" id="input-text"
+                      placeholder="Enter your name here">
+                    <label for="input-text" class="input__label">
+                      <span class="input__user-icon-wrapper">Your name:</span>
+                      <svg class="input__user-icon">
+                        <use href="img/sprite.svg#input-user-icon"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </li>
+                <li class="form__item input-list__item">
+                  <div class="input">
+                    <input type="text" class="input__control" name="name" id="input-text"
+                      placeholder="+7 (___) ___ - __ - __">
+                    <label for="input-text" class="input__label">
+                      <span class="input__user-icon-wrapper">Your mobile number:</span>
+                      <svg class="input__user-icon">
+                        <use href="img/sprite.svg#input-mobile-icon"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </li>
+                <li class="form__item input-list__item">
+                  <div class="input input--error">
+                    <input type="text" class="input__control" name="name" id="input-text" placeholder="Email">
+                    <label for="input-text" class="input__label">
+                      <span class="input__user-icon-wrapper">Your e-mail adress:</span>
+                      <svg class="input__user-icon">
+                        <use href="img/sprite.svg#input-email-icon"></use>
+                      </svg>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <a href="thank.html" class="button button-primary user-form__button"> Get result</a>
+              <div class="user-form__checkbox-agreement">
+                <div class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="agreement" checked id="checkbox_1">
+                  <label class="checkbox__label checkbox__label--agreement" for="checkbox_1">
+                    <div class="checkbox__icon checkbox__icon--agreement"></div> Я даю <span>
+                      согласие на обработку
+                      персональных данных
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="footer footer--halfed">
-      <div class="footer__container footer__container--index">
+      <div class="footer__container">
         <div class="footer__copyright">
           <div class="footer__item">
             <p class="footer__text">ООО «НОВЫЕ МЕТРЫ»</p>
@@ -88,7 +177,7 @@
         <div class="footer__contacts">
           <div class="footer__item">
             <a class="footer__link footer__text" href="mailto:novyemetry@yandex.ru">
-              novyemetry@yandex.ru</a>
+              new@gmail.com</a>
           </div>
           <div class="footer__item">
             <a href="https://goo.gl/maps/vM8SU1jRn2uaLFim6" class="footer__link footer__text" target="_blank">191036,

@@ -16,11 +16,11 @@
 }
 
 .appartment-choice__expert {
-  background: radial-gradient(rgba(40, 41, 46, 0.53), rgba(0, 0, 0, 0.6)),
-    url("../img/expert-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  // background: radial-gradient(rgba(40, 41, 46, 0.53), rgba(0, 0, 0, 0.6)),
+  //   url("../img/expert-bg.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
 
 
   @media (min-width:767px) {
@@ -35,6 +35,11 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
+  background: radial-gradient(rgba(40, 41, 46, 0.53), rgba(0, 0, 0, 0.6)),
+    url("../img/expert-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width:767px) {
     padding: 20px;
@@ -230,101 +235,9 @@
 }
 
 // -------------------------------------------form---------------------
-.form {
-  // box-shadow: 0 14px 14px 0 rgba($secondary-bg, $alpha: 0.85);
-  padding: 20px 10px;
-  background-color: $secondary-bg;
-  text-align: center;
-
-  @media (min-width:767px) {
-    padding: 24px;
-    width: 100%;
-    order: 0;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.progress {
-  width: 100%;
-  padding: 0 4px;
-  display: flex;
-  align-items: center;
-  height: 15px;
-  background-color: $input-bg;
-  border: 1px solid $main-bg;
-  border-radius: 15px;
-}
-
-.progress--height {
-  height: 30px;
-
-  .progress__body {
-    width: 33%;
-    height: 18px;
-  }
-}
 
 
-.form__progress {
-  margin-bottom: 12px;
 
-}
-
-.progress__body {
-  width: 1%;
-  height: 7px;
-  border-radius: 15px;
-  background-color: $primary-color;
-  box-shadow: 0 0 3px 0 $primary-color;
-}
-
-.progress__body--step1 {
-  width: 25%;
-}
-
-.progress__body--step2 {
-  width: 50%;
-}
-
-.progress__body--step3 {
-  width: 75%;
-}
-
-.progress__body--step4 {
-  width: 99%;
-}
-
-.form__progress-text {
-  margin-bottom: 18px;
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.form__title {
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 23px;
-}
-
-.form__list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  margin-bottom: 20px;
-}
-
-.form__list--rows {
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 10px;
-
-}
-
-.form__item {
-  flex: 1 1 49%;
-  text-align-last: left;
-}
 
 .bottom-field {
   margin-top: auto;
