@@ -9,27 +9,17 @@ $active-color: #f44400;
 @import "fonts.scss";
 @import "ui-kit.scss";
 @import "header.scss";
+@import "footer.scss";
+@import "BEM-blocks.scss";
 @import "intro.scss";
 @import "appartment-choice.scss";
 @import "loading-page.scss";
-@import "footer.scss";
+@import "user-form.scss";
+@import "thank.scss";
+
+
+
 
 .wrapper {
   position: relative;
-}
-
-.wrapper--index::before {
-  content: "";
-  background: url("../img/mobile/hero_bg-mobile.jpg") center / cover;
-  min-height: 200px;
-  width: 100%;
-  top: 0;
-  left: 0;
-
-  @media (min-width: 767px) {
-    position: absolute;
-    background: url("../img/desktop/hero_bg-desktop.jpg") center / cover;
-    width: 50%;
-    height: 100vh;
-  }
 }
