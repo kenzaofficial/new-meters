@@ -1,10 +1,12 @@
 .thank {
-  padding: 50px 0 10px;
+  padding: 100px 0;
 
   @media (max-width:767px) {
     background-color: $secondary-bg;
+    padding: 50px 0 10px;
   }
 }
+
 
 .thank__body {
   @media (min-width:767px) {
@@ -25,10 +27,11 @@
 
   @media (min-width:767px) {
     position: absolute;
-    top: 0;
     right: 50%;
   }
 }
+
+
 
 
 .thank__expert {
@@ -62,7 +65,13 @@
 }
 
 
-.advantages-thank {}
+.advantages-thank {
+
+  @media (min-width:767px) {
+    padding-top: 50px;
+
+  }
+}
 
 .advantages-thank__list {
   @media (min-width:767px) {
@@ -134,8 +143,6 @@
 
 
 
-
-
 .form-subscribe {
   border: 1px solid $primary-color;
 
@@ -171,6 +178,7 @@
   display: flex;
   width: 100%;
   align-items: center;
+  justify-content: center;
 
   @media (min-width:767px) {
     max-width: 240px;
